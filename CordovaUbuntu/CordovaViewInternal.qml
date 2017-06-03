@@ -47,7 +47,10 @@ OrientationHelper {
         anchors.fill: parent
         WebView {
             id: webView
-            anchors.fill: parent
+            anchors { 
+                fill: parent 
+                bottomMargin: UbuntuApplication.inputMethod.visible ? UbuntuApplication.inputMethod.keyboardRectangle.height : 0
+            }
             objectName: "webView"
 
             onNavigationRequested: {
