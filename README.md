@@ -19,14 +19,20 @@
 #
 -->
 
-Cordova/Ubuntu
-==========
+# Cordova for Ubuntu Touch
+
+## What is it?
 
 The repo contains patched version of Cordova for Ubuntu with the following improvements:
 
 * WebView is automatically resized when on-screen keyboard is shown/hidden
 
-Requirements
-------------
+## Requirements
 
 - Original Ubuntu 16.04 image
+
+## How to use
+
+```
+cordova platform update ubuntu https://github.com/milikhin/cordova-ubuntu.git --usegit
+```
