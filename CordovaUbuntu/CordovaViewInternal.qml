@@ -16,11 +16,12 @@
  * under the License.
  *
 */
-import QtQuick 2.0
+import QtQuick 2.4
 import com.canonical.Oxide 1.9
 import "cordova_wrapper.js" as CordovaWrapper
-import Ubuntu.Components 1.0
-import Ubuntu.Components.Popups 1.0
+import Ubuntu.Components 1.3
+import Ubuntu.Components.Popups 1.3
+import Ubuntu.Web 0.2
 
 OrientationHelper {
     id: root
@@ -51,6 +52,7 @@ OrientationHelper {
                 fill: parent 
                 bottomMargin: UbuntuApplication.inputMethod.visible ? UbuntuApplication.inputMethod.keyboardRectangle.height : 0
             }
+            contextualActions: ActionList {}
             objectName: "webView"
 
             onNavigationRequested: {
