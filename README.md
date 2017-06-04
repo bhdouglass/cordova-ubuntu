@@ -19,17 +19,20 @@
 #
 -->
 
-Cordova/Ubuntu
-==========
+# Cordova for Ubuntu Touch
 
-Cordova/Ubuntu is the Ubuntu port of the Apache Cordova project.
+## What is it?
 
-Requirements
-------------
+The repo contains patched version of Cordova for Ubuntu with the following improvements:
 
-- Ubuntu SDK
+* WebView is automatically resized when on-screen keyboard is shown/hidden
 
-License
--------
+## Requirements
 
-Licensed under the APACHE-2.0 license. See LICENSE file for details.
+- Original Ubuntu 16.04 image
+
+## How to use
+
+```
+cordova platform update ubuntu https://github.com/milikhin/cordova-ubuntu.git --usegit
+```
