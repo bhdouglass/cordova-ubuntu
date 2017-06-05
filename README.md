@@ -26,6 +26,7 @@
 The repo contains patched version of Cordova for Ubuntu with the following improvements:
 
 * WebView is automatically resized when on-screen keyboard is shown/hidden
+* Copy/Paste is supported with touchscreen
 
 ## Requirements
 
