@@ -78,7 +78,8 @@ module.exports = {
     },
 
     generateApparmorProfile: function(config, dir) {
-        var policy = { policy_groups: ['networking', 'audio'], policy_version: 1 };
+        // var policy = { policy_groups: ['networking', 'audio'], policy_version: 1 };
+        var policy = { policy_groups: ['networking', 'audio'], policy_version: 1, "write_path": ["@{HOME}/"] };
 
         config.etree.getroot().findall('./feature/param').forEach(function (element) {
             if (element.attrib.policy_group && policy.policy_groups.indexOf(element.attrib.policy_group) === -1)
